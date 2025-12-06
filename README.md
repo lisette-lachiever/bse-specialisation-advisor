@@ -2,6 +2,8 @@
 
 A web-based assessment tool to help Software Engineering students identify their ideal specialisation path.
 
+Live Demo: https://lisette-lachiever.github.io/bse-specialisation-advisor/ 
+
 ## Overview
 
 Interactive quiz that evaluates student preferences across four specialisations:
@@ -44,6 +46,8 @@ No dependencies or build process required.
 **Scoring Algorithm**: Each answer awards 3 points to one specialisation. The system tracks all scores and recommends the highest-scoring path.
 
 **Page Management**: Single-page application using JavaScript to toggle visibility between sections (Landing, Quiz, Results, Contact).
+
+**Video Demonstration**: [Watch the full walkthrough](:https://drive.google.com/file/d/10wBx2IEa-2nlBgfGIEvLEPqoqBwf9N5y/view?usp=sharing) - 11-minute demonstration of features and technical implementation.
 
 ## Image credits
 
