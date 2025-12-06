@@ -45,6 +45,10 @@ No dependencies or build process required.
 
 **Page Management**: Single-page application using JavaScript to toggle visibility between sections (Landing, Quiz, Results, Contact).
 
+## Image credits
+
+Hero section background image by [Unsplash](https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-desk-v7xiSfj6mGI)
+
 ## Developer
 
 **Name**: Lisette Mukiza  
