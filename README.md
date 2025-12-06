@@ -47,7 +47,7 @@ No dependencies or build process required.
 
 **Page Management**: Single-page application using JavaScript to toggle visibility between sections (Landing, Quiz, Results, Contact).
 
-**Video Demonstration**: [Watch the full walkthrough](https://drive.google.com/file/d/10wBx2IEa-2nlBgfGIEvLEPqoqBwf9N5y/view?usp=sharing)- 11-minute demonstration of features and technical implementation.
+**Video Demonstration**: Watch the full walkthrough: https://drive.google.com/file/d/10wBx2IEa-2nlBgfGIEvLEPqoqBwf9N5y/view?usp=sharing - 11-minute demonstration of features and technical implementation.
 
 ## Image credits
 
