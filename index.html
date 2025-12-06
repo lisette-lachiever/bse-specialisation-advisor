@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>SpecFinder</title>
+</head>
+<body>
+  
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">SpecFinder</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('landing')">Home</a></li>
+                <li><a href="#" onclick="showPage('quiz')">Take Quiz</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+   <!-- Landing Page -->
+    <div id="landing" class="page active">
+        <section class="hero">
+            <div class="container" id="container-1">
+                <h1 id="typing-text">BSE Specialisation Advisor</h1>
+                <p><strong>Find the perfect BSE specialisation that matches your interests and career goals</strong></p>
+                <button class="btn" onclick="showPage('quiz')">Start Assessment</button>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-gear"></i></div>
+                    <h3>Low-Level Programming</h3>
+                    <p>Work with hardware, embedded systems, and system-level optimization</p>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-vr-cardboard"></i></div>
+                    <h3>AR/VR Development</h3>
+                    <p>Create immersive experiences with augmented and virtual reality</p>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>Build complete web applications from frontend to backend</p>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>Machine Learning</h3>
+                    <p>Develop intelligent systems that learn from data</p>
+                </div>
+            </div>
+         </div>
+
+         <section>
+            <div id="container-work">
+                <h2 class="work-h2">How It Works</h2>
+                <p class="work-p">
+                    Our assessment consists of 8 carefully designed questions that evaluate your interests, 
+                    skills, and preferences. Based on your responses, we'll recommend the BSE specialisation 
+                    that best aligns with your profile and provide actionable next steps.
+                </p>
+                <button class="btn" onclick="showPage('quiz')">Get Started</button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz" class="page">
+        <div class="quiz-container">
+            <div class="progress-text">
+                <span id="current-question">1</span> of <span id="total-questions">8</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+
+            <div class="question" id="question-container"></div>
+
+            
+            <button class="btn" id="" onclick="prevQuestion()">Previous Question</button>
+            <button class="btn" id="next-btn" onclick="nextQuestion()">Next Question</button>
+
+
+        </div>
+    </div>
+
+    
+    <div id="results" class="page">
+        <div class="results-container">
+
+            <!-- Header title + icon -->
+            <div class="result-header">
+                <div class="result-icon" id="result-icon"></div>
+                <h1 id="result-title">Your Specialisation</h1>
+                <p id="result-subtitle"></p>
+            </div>
+
+            <!-- Why This Matches You -->
+            <div class="why-section">
+                <h3>Why This Matches You</h3>
+                <p id="result-description"></p>
+            </div>
+
+            <!-- 2x2 grid -->
+            <div class="results-grid">
+                <div class="result-section">
+                    <h3>Your Score Breakdown</h3>
+                    <div class="score-chart" id="score-chart"></div>
+                </div>
+
+                <div class="result-section">
+                    <h3>Key Strengths</h3>
+                    <ul id="result-strengths"></ul>
+                </div>
+
+                <div class="result-section">
+                    <h3>Recommended Next Steps</h3>
+                    <ul id="result-steps"></ul>
+                </div>
+
+                <div class="result-section">
+                    <h3>Career Opportunities</h3>
+                    <ul id="result-careers"></ul>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:25px;">
+                <button class="btn" onclick="resetQuiz()">Retake Assessment</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <div class="contact-container">
+            <h1>Contact Information</h1>
+
+            <div class="contact-info">
+                <h3 style="text-align: center;">Developer Information</h3>
+                <p><strong>Name:</strong> Lisette Mukiza</p>
+                <p><strong>Program:</strong> Bs Software Engineering</p>
+                <p><strong>Email:</strong> l.mukiza@alustudent.com</p>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:l.mukiza@alustudent.com" class="contact-link">
+                    <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                    <strong>Email</strong>
+                    <p>Send a message</p>
+                </a>
+
+                <a href="https://github.com/lisette-lachiever" target="_blank" class="contact-link">
+                    <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                    <strong>GitHub</strong>
+                    <p>View projects</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/lisette-mukiza" target="_blank" class="contact-link">
+                    <div class="contact-icon"><i class="fa-brands fa-square-linkedin"></i></div>
+                    <strong>LinkedIn</strong>
+                    <p>Connect</p>
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <button class="btn btn-secondary" onclick="showPage('landing')">Back to Home</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
